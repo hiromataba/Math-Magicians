@@ -15,7 +15,7 @@ class Calculator extends Component {
         <div className="row-flex">
           <button className="btn" type="submit">AC</button>
           <button className="btn" type="submit">+/-</button>
-          <button className="btn" type="submit">&#247;</button>
+          <button className="btn" type="submit">&#x25;</button>
           <button className="btn" type="submit">&#43;</button>
         </div>
         <div className="row-flex">
@@ -34,7 +34,7 @@ class Calculator extends Component {
           <button className="btn" type="submit">1</button>
           <button className="btn" type="submit">2</button>
           <button className="btn" type="submit">3</button>
-          <button className="btn" type="submit">&#215;</button>
+          <button className="btn" type="submit">&#247;</button>
         </div>
         <div className="row-flex">
           <button className="btn zero" type="submit">0</button>
