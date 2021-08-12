@@ -2,6 +2,8 @@
 
 # Math Magicians
 
+![calculator](https://user-images.githubusercontent.com/75126481/129247649-4a14a36a-b25b-4562-9e7c-a33a9a5f248d.png)
+
 ## Description
 
 This is the first project of the Math Magicians application. You will set up the environment and tools needed to develop a React application. In the following projects, you will develop the actual application.
