@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import calculte from '../logic/calculator';
+import Result from './result';
 
 class Calculator extends Component {
   constructor() {
@@ -9,6 +10,13 @@ class Calculator extends Component {
       next: null,
       operation: null,
     };
+    this.rows = [
+      ['AC', '+/-', '%', '÷'],
+      ['7', '8', '9', 'x'],
+      ['4', '5', '6', '-'],
+      ['1', '2', '3', '+'],
+      ['0', '.', '='],
+    ];
   }
 
   handleKeyPress = (event) => {
@@ -39,155 +47,21 @@ class Calculator extends Component {
     const { total, next, operation } = this.state;
     return (
       <div className="calculator">
-        <div className="result">
-          <input
-            type="text"
-            value={this.displayResult(total, next, operation)}
-          />
-        </div>
-        <div className="row-flex">
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            AC
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            +/-
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            %
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            ÷
-          </button>
-        </div>
-        <div className="row-flex">
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            7
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            8
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            9
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            x
-          </button>
-        </div>
-        <div className="row-flex">
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            4
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            5
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            6
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            -
-          </button>
-        </div>
-        <div className="row-flex">
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            1
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            2
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            3
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            +
-          </button>
-        </div>
-        <div className="row-flex">
-          <button
-            className="btn zero"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            0
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            .
-          </button>
-          <button
-            className="btn"
-            type="submit"
-            onClick={(e) => this.handleKeyPress(e)}
-          >
-            =
-          </button>
-        </div>
+        <Result value={this.displayResult(total, next, operation)} />
+        {this.rows.map((row) => (
+          <div className="row-flex" key={row}>
+            {row.map((key) => (
+              <button
+                className="btn"
+                type="submit"
+                onClick={(e) => this.handleKeyPress(e)}
+                key={key}
+              >
+                {key}
+              </button>
+            ))}
+          </div>
+        ))}
       </div>
     );
   }
