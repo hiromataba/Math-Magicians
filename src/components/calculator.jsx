@@ -1,31 +1,29 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import calculte from '../logic/calculator';
 import Result from './result';
 
-class Calculator extends Component {
-  constructor() {
-    super();
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-    this.rows = [
-      ['AC', '+/-', '%', '÷'],
-      ['7', '8', '9', 'x'],
-      ['4', '5', '6', '-'],
-      ['1', '2', '3', '+'],
-      ['0', '.', '='],
-    ];
-  }
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+  });
 
-  handleKeyPress = (event) => {
-    const calculator = calculte(this.state, event.currentTarget.innerHTML);
-    this.setState(calculator);
+  const rows = [
+    ['AC', '+/-', '%', '÷'],
+    ['7', '8', '9', 'x'],
+    ['4', '5', '6', '-'],
+    ['1', '2', '3', '+'],
+    ['0', '.', '='],
+  ];
+
+  const handleKeyPress = (event) => {
+    const calculator = calculte(state, event.currentTarget.innerHTML);
+    setState({ ...state, ...calculator });
   };
 
-  displayResult = (total, next, operation) => {
-    if (total && operation && next) {
+  const displayResult = (total, next, operation) => {
+    if (total && next && operation) {
       return `${total} ${operation} ${next}`;
     }
     if (!total && !operation && !next) {
@@ -42,29 +40,26 @@ class Calculator extends Component {
     }
     return '0';
   };
-
-  render() {
-    const { total, next, operation } = this.state;
-    return (
-      <div className="calculator">
-        <Result value={this.displayResult(total, next, operation)} />
-        {this.rows.map((row) => (
-          <div className="row-flex" key={row}>
-            {row.map((key) => (
-              <button
-                className="btn"
-                type="submit"
-                onClick={(e) => this.handleKeyPress(e)}
-                key={key}
-              >
-                {key}
-              </button>
-            ))}
-          </div>
-        ))}
-      </div>
-    );
-  }
-}
+  const { total, next, operation } = state;
+  return (
+    <div className="calculator">
+      <Result value={displayResult(total, next, operation)} />
+      {rows.map((row) => (
+        <div className="row-flex" key={row}>
+          {row.map((key) => (
+            <button
+              className="btn"
+              type="submit"
+              onClick={(e) => handleKeyPress(e)}
+              key={key}
+            >
+              {key}
+            </button>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default Calculator;
