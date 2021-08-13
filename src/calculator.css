@@ -52,10 +52,10 @@ body {
   width: 100%;
 }
 
-.row-flex:last-child .zero {
-  flex: 2.41;
-}
-
 .row-flex .btn:last-child {
   background-color: #f59600;
+}
+
+.row-flex:last-child .btn:first-child {
+  flex: 2.43;
 }
