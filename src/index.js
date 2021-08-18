@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import './calculator.css';
+import './navbar.css';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -3,7 +3,6 @@ import propTypes from 'prop-types';
 
 const Result = (props) => {
   const { value } = props;
-  // console.log(value);
   return (
     <div className="result">
       <input type="text" value={value} />

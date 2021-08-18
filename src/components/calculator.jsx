@@ -42,22 +42,27 @@ const Calculator = () => {
   };
   const { total, next, operation } = state;
   return (
-    <div className="calculator">
-      <Result value={displayResult(total, next, operation)} />
-      {rows.map((row) => (
-        <div className="row-flex" key={row}>
-          {row.map((key) => (
-            <button
-              className="btn"
-              type="submit"
-              onClick={(e) => handleKeyPress(e)}
-              key={key}
-            >
-              {key}
-            </button>
-          ))}
-        </div>
-      ))}
+    <div className="calculator-page">
+      <div className="welcome-txt">
+        <h2>Let us do some Math !</h2>
+      </div>
+      <div className="calculator">
+        <Result value={displayResult(total, next, operation)} />
+        {rows.map((row) => (
+          <div className="row-flex" key={row}>
+            {row.map((key) => (
+              <button
+                className="btn"
+                type="submit"
+                onClick={(e) => handleKeyPress(e)}
+                key={key}
+              >
+                {key}
+              </button>
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
