@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect quote to match snapshot 1`] = `
+<div>
+  <p
+    className="quote"
+    style={
+      Object {
+        "color": "#363c48",
+        "fontSize": "34px",
+        "left": "50%",
+        "paddingBottom": "150px",
+        "position": "absolute",
+        "top": "50%",
+        "transform": "translate(-50%,-50%)",
+      }
+    }
+  >
+    Mathmatics is not about numbers, equations, compulations, or algorithms: It is about understanding. -William Paul Thurstan
+  </p>
+</div>
+`;
