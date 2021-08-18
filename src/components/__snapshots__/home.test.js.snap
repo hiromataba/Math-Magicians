@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect quote to match snapshot 1`] = `
+<div
+  className="home"
+  style={
+    Object {
+      "color": "#363c48",
+      "lineHeigth": "990px",
+      "margin": "100px",
+    }
+  }
+>
+  <h3
+    style={
+      Object {
+        "fontSize": "35px",
+        "marginBottom": "50px",
+      }
+    }
+  >
+    Welcome to Math Magicians
+  </h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero est error? Nesciunt impedit incidunt, optio consequatur quasi, dignissimos voluptates veritatis velit illum repellat itaque laboriosam animi assumenda harum obcaecati magnam eos doloremque unde ex et sequi, maxime sed quis? Minus, distinctio at? Perferendis consectetur quasi accusantium aliquam, quaerat pariatur!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate non atque quos debitis deserunt similique itaque porro. Culpa aut, voluptatem, assumenda incidunt quaerat eos cum sed architecto reprehenderit voluptates unde enim vero, distinctio nobis temporibus labore illo officiis dolores. Vero quod a vitae voluptates blanditiis id dolorem commodi assumenda sit!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero est error? Nesciunt impedit incidunt, optio consequatur quasi, dignissimos voluptates veritatis velit illum repellat itaque laboriosam animi assumenda harum obcaecati magnam eos doloremque unde ex et sequi, maxime sed quis? Minus, distinctio at? Perferendis consectetur quasi accusantium aliquam, quaerat pariatur!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate non atque quos debitis deserunt similique itaque porro. Culpa aut, voluptatem, assumenda incidunt quaerat eos cum sed architecto reprehenderit voluptates unde enim vero, distinctio nobis temporibus labore illo officiis dolores. Vero quod a vitae voluptates blanditiis id dolorem commodi assumenda sit!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero est error? Nesciunt impedit incidunt, optio consequatur quasi, dignissimos voluptates veritatis velit illum repellat itaque laboriosam animi assumenda harum obcaecati magnam eos doloremque unde ex et sequi, maxime sed quis? Minus, distinctio at? Perferendis consectetur quasi accusantium aliquam, quaerat pariatur!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate non atque quos debitis deserunt similique itaque porro. Culpa aut, voluptatem, assumenda incidunt quaerat eos cum sed architecto reprehenderit voluptates unde enim vero, distinctio nobis temporibus labore illo officiis dolores. Vero quod a vitae voluptates blanditiis id dolorem commodi assumenda sit!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero est error? Nesciunt impedit incidunt, optio consequatur quasi, dignissimos voluptates veritatis velit illum repellat itaque laboriosam animi assumenda harum obcaecati magnam eos doloremque unde ex et sequi, maxime sed quis? Minus, distinctio at? Perferendis consectetur quasi accusantium aliquam, quaerat pariatur!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate non atque quos debitis deserunt similique itaque porro. Culpa aut, voluptatem, assumenda incidunt quaerat eos cum sed architecto reprehenderit voluptates unde enim vero, distinctio nobis temporibus labore illo officiis dolores. Vero quod a vitae voluptates blanditiis id dolorem commodi assumenda sit!
+  </p>
+</div>
+`;

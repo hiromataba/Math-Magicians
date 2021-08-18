@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect quote to match snapshot 1`] = `
+<div
+  className="navbar"
+>
+  <div
+    className="logo"
+  >
+    <a
+      href="/"
+      style={
+        Object {
+          "color": "#f28766",
+        }
+      }
+    >
+      <h3>
+        Math Magician
+      </h3>
+    </a>
+  </div>
+  <ul
+    className="nav-links"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/calculator"
+      >
+        Calculator
+      </a>
+    </li>
+    <li>
+      <a
+        href="/quote"
+      >
+        Quotes
+      </a>
+    </li>
+  </ul>
+</div>
+`;
