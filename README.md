@@ -15,6 +15,10 @@
 - ReactJS
 - Css
 
+## See Live
+
+[Live Demo](https://hiro-math-magicias.herokuapp.com/calculator)
+
 
 ## Getting Started
 
